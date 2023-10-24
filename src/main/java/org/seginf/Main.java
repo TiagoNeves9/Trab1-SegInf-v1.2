@@ -13,8 +13,8 @@ public class Main {
             CertificateException, NoSuchAlgorithmException, InvalidKeyException{
         String options;
         String path = "src/main/java/org/seginf/";
-        //String path = "C:\\Users\\tiago\\OneDrive\\Ambiente de Trabalho\\5Semestre\\SEGINF\\Trab1-SegInf-v1.2\\Trab1-SegInf-v1.2\\src\\main\\java\\org\\seginf\\";
         while (true) {
+            System.out.println();
             Scanner scanner = new Scanner(System.in);
             options = scanner.nextLine().toLowerCase();
             String[] arg = options.split(" ");
