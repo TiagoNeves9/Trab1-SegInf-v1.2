@@ -70,8 +70,9 @@ public class Block {
             String lastLine = null;
             while ((line = reader.readLine()) != null) {
                 if(line.equals(lastLineRead.toString())){
-                    lastLine = line;
+                   break;
                 }
+                lastLine = line;
             }
             if(lastLine!=null){
                 return Block.toBlock(lastLine);
