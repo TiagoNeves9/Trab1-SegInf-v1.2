@@ -1,4 +1,4 @@
-package org.seginf.exercício7;
+package org.seginf.ex7.func;
 
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
@@ -38,10 +38,10 @@ public class MainA {
 
         String ivBase64 = Base64.getEncoder().encodeToString(iv);
         String encryptedTextBase64 = Base64.getEncoder().encodeToString(encryptedText);
+        String header = Base64.getEncoder().encodeToString("{\"alg\":\"RSA-OAEP-256\",\"enc\":\"A256GCM\"}".getBytes());
 
-        String Header = "{\"alg\":\"RSA-OAEP-256\",\"enc\":\"A256GCM\"}";
 
-        return Header + "." + ivBase64 + "." + encryptedTextBase64;
+        return header + "." + ivBase64 + "." + encryptedTextBase64;
     }
 
     public static String dec(String encryptedTextBase64, SecretKey encryptionKey) throws Exception {

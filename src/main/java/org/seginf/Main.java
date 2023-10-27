@@ -87,7 +87,7 @@ public class Main {
                     bufferedWriter.write(newBlock);
                     bufferedWriter.close();
 
-                    Aux.ReadContent(filename);
+                    ReadContent(filename);
 
                 } catch (NoSuchAlgorithmException | IOException e) {
                     throw new RuntimeException(e);

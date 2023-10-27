@@ -1,11 +1,8 @@
-package org.seginf.exercício7;
+package org.seginf.ex7.func;
 
 import javax.crypto.Cipher;
-import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
-import java.security.KeyPair;
-import java.security.KeyPairGenerator;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.util.Base64;
@@ -27,7 +24,7 @@ public class MainB {
         byte[] decryptedKeyBytes = cipher.doFinal(encryptedKeyBytes);
         return new SecretKeySpec(decryptedKeyBytes, 0, decryptedKeyBytes.length, "AES");
     }
-
+/*
     public static void main(String[] args) throws Exception {
         KeyGenerator keyGenerator = KeyGenerator.getInstance("AES");
         keyGenerator.init(256);
@@ -45,4 +42,6 @@ public class MainB {
         SecretKey decryptedKey = decSymmetricKey(encryptedKey, privateKey);
         System.out.println("Chave simétrica decifrada: " + Base64.getEncoder().encodeToString(decryptedKey.getEncoded()));
     }
+
+ */
 }

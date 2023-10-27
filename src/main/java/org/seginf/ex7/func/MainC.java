@@ -1,4 +1,4 @@
-package org.seginf.exercício7;
+package org.seginf.ex7.func;
 
 import java.io.FileInputStream;
 import java.security.Key;
@@ -31,7 +31,7 @@ public class MainC {
             throw new Exception("A chave não é uma chave privada ou a senha está incorreta.");
         }
     }
-
+/*
     public static void main(String[] args) throws Exception {
         String certificateFilePath = "src/main/java/org/seginf/exercício7/end-entities/Alice_1.cer";
         String keystoreFilePath = "src/main/java/org/seginf/exercício7/pfx/Alice_1.pfx";
@@ -45,4 +45,6 @@ public class MainC {
         PrivateKey privateKey = getPrivateKeyFromKeystore(keystoreFilePath, keystorePassword, alias);
         System.out.println("Chave privada do keystore: " + privateKey);
     }
+
+ */
 }
