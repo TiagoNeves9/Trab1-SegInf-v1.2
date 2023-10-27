@@ -19,8 +19,8 @@ public class Main {
             System.out.print((char)r);
         }
     }
-    public static void main(String[] args)throws IOException, NoSuchPaddingException, IllegalBlockSizeException,
-            CertificateException, NoSuchAlgorithmException, InvalidKeyException{
+
+    public static void main(String[] args) {
         String options;
         String path = "src/main/java/org/seginf/";
         while (true) {
@@ -87,7 +87,7 @@ public class Main {
                     bufferedWriter.write(newBlock);
                     bufferedWriter.close();
 
-                    ReadContent(filename);
+                   ReadContent(filename);
 
                 } catch (NoSuchAlgorithmException | IOException e) {
                     throw new RuntimeException(e);
