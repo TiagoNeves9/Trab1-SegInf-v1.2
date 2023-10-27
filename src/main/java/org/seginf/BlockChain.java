@@ -2,6 +2,7 @@ package org.seginf;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.seginf.Block;
 
 public class BlockChain {
 

@@ -9,6 +9,16 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
+    public static void ReadContent(String path) throws IOException {
+        File file = new File(path);
+        BufferedReader br=new BufferedReader(new FileReader(file));
+        System.out.println("file content: ");
+        int r=0;
+        while((r=br.read())!=-1)
+        {
+            System.out.print((char)r);
+        }
+    }
     public static void main(String[] args)throws IOException, NoSuchPaddingException, IllegalBlockSizeException,
             CertificateException, NoSuchAlgorithmException, InvalidKeyException{
         String options;
